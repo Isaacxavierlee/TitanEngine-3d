@@ -8,7 +8,7 @@ int main() {
 
     Titan::Engine engine;
 
-    if (!engine.Initialize("TitanEngine Editor", 1024, 768)) {
+    if (!engine.Initialize("TitanEngine Editor", 1280, 720)) {
         std::cerr << "Failed to initialize engine!" << std::endl;
         return -1;
     }

@@ -6,6 +6,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 include(FetchContent)
 
+# GLFW
 FetchContent_Declare(
     glfw
     GIT_REPOSITORY https://github.com/glfw/glfw.git
@@ -16,16 +17,44 @@ set(GLFW_BUILD_TESTS OFF CACHE BOOL "")
 set(GLFW_INSTALL OFF CACHE BOOL "")
 FetchContent_MakeAvailable(glfw)
 
+# ImGui
+FetchContent_Declare(
+    imgui
+    GIT_REPOSITORY https://github.com/ocornut/imgui.git
+    GIT_TAG v1.90.6-docking
+)
+FetchContent_MakeAvailable(imgui)
+
 # Engine library
 add_library(TitanEngine STATIC
     Engine/src/Core/Engine.cpp
+    Engine/src/Core/ImGuiLayer.cpp
+)
+
+# Add ImGui source files
+target_sources(TitanEngine PRIVATE
+    ${imgui_SOURCE_DIR}/imgui.cpp
+    ${imgui_SOURCE_DIR}/imgui_demo.cpp
+    ${imgui_SOURCE_DIR}/imgui_draw.cpp
+    ${imgui_SOURCE_DIR}/imgui_tables.cpp
+    ${imgui_SOURCE_DIR}/imgui_widgets.cpp
+    ${imgui_SOURCE_DIR}/backends/imgui_impl_glfw.cpp
+    ${imgui_SOURCE_DIR}/backends/imgui_impl_opengl3.cpp
 )
 
 target_include_directories(TitanEngine PUBLIC
     ${CMAKE_CURRENT_SOURCE_DIR}/Engine/include
+    ${imgui_SOURCE_DIR}
+    ${imgui_SOURCE_DIR}/backends
 )
 
-target_link_libraries(TitanEngine PUBLIC glfw)
+# Find OpenGL
+find_package(OpenGL REQUIRED)
+
+target_link_libraries(TitanEngine PUBLIC 
+    glfw 
+    ${OPENGL_gl_LIBRARY}
+)
 
 # Editor executable
 add_executable(TitanEditor

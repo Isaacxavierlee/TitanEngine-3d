@@ -12,7 +12,7 @@ namespace Titan {
         bool IsRunning() const { return m_IsRunning; }
 
     private:
-        void* m_Window = nullptr;  // GLFWwindow* (void* to avoid including GLFW in header)
+        void* m_Window = nullptr;
         bool m_IsRunning = false;
         int m_Width = 0;
         int m_Height = 0;
