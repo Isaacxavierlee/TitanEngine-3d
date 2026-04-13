@@ -1,18 +1,34 @@
+// Include windows.h BEFORE any OpenGL headers
+#include <windows.h>
+
+// Then OpenGL headers
+#include <GL/gl.h>
+#include <GLFW/glfw3.h>
+
+// Then engine headers
 #include "TitanEngine/Core/Engine.h"
 #include "TitanEngine/Core/ImGuiLayer.h"
+#include "TitanEngine/Math/Vector3.h"
+#include "TitanEngine/Math/Matrix4.h"
 #include <imgui.h>
-#include <GLFW/glfw3.h>
 #include <iostream>
 #include <chrono>
-
-// Simple OpenGL includes for Windows
-#include <windows.h>
-#include <GL/gl.h>
 
 namespace Titan {
 
     Engine::Engine() = default;
     Engine::~Engine() = default;
+
+    void TestMath() {
+        Vector3 pos(1, 2, 3);
+        Vector3 vel(0.1f, 0.2f, 0.3f);
+        Vector3 newPos = pos + vel;
+        std::cout << "[TEST] Vector3: " << newPos.x << "," << newPos.y << "," << newPos.z << std::endl;
+
+        Matrix4 trans = Matrix4::Translation(Vector3(1, 2, 3));
+        Vector3 point = trans.TransformPoint(Vector3::Zero());
+        std::cout << "[TEST] Matrix4: " << point.x << "," << point.y << "," << point.z << std::endl;
+    }
 
     bool Engine::Initialize(const std::string& appName, int width, int height) {
         std::cout << "Initializing TitanEngine..." << std::endl;
@@ -40,6 +56,9 @@ namespace Titan {
         glfwSwapInterval(1);
 
         ImGuiLayer::Get().Initialize(static_cast<GLFWwindow*>(m_Window));
+
+        // Test math library
+        TestMath();
 
         m_IsRunning = true;
         std::cout << "TitanEngine initialized!" << std::endl;

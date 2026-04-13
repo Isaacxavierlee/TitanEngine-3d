@@ -32,9 +32,11 @@ find_package(OpenGL REQUIRED)
 add_library(TitanEngine STATIC
     Engine/src/Core/Engine.cpp
     Engine/src/Core/ImGuiLayer.cpp
+    Engine/src/Math/Vector3.cpp
+    Engine/src/Math/Matrix4.cpp
 )
 
-# ImGui sources (OpenGL backend)
+# ImGui sources
 target_sources(TitanEngine PRIVATE
     ${imgui_SOURCE_DIR}/imgui.cpp
     ${imgui_SOURCE_DIR}/imgui_demo.cpp
@@ -64,4 +66,4 @@ add_executable(TitanEditor
 
 target_link_libraries(TitanEditor PRIVATE TitanEngine)
 
-message(STATUS "TitanEngine configured with OpenGL + ImGui!")
+message(STATUS "TitanEngine configured with Math Library!")
