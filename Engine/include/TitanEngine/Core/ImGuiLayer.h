@@ -8,7 +8,7 @@ namespace Titan {
     public:
         static ImGuiLayer& Get();
 
-        void Init(GLFWwindow* window);
+        void Initialize(GLFWwindow* window);
         void Shutdown();
         void NewFrame();
         void Render();

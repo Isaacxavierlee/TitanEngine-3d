@@ -17,14 +17,6 @@ set(GLFW_BUILD_TESTS OFF CACHE BOOL "")
 set(GLFW_INSTALL OFF CACHE BOOL "")
 FetchContent_MakeAvailable(glfw)
 
-# Vulkan Headers
-FetchContent_Declare(
-    vulkan_headers
-    GIT_REPOSITORY https://github.com/KhronosGroup/Vulkan-Headers.git
-    GIT_TAG v1.3.290
-)
-FetchContent_MakeAvailable(vulkan_headers)
-
 # ImGui
 FetchContent_Declare(
     imgui
@@ -33,14 +25,16 @@ FetchContent_Declare(
 )
 FetchContent_MakeAvailable(imgui)
 
+# OpenGL
+find_package(OpenGL REQUIRED)
+
 # Engine library
 add_library(TitanEngine STATIC
     Engine/src/Core/Engine.cpp
     Engine/src/Core/ImGuiLayer.cpp
-    Engine/src/Renderer/VulkanRenderer.cpp
 )
 
-# ImGui sources
+# ImGui sources (OpenGL backend)
 target_sources(TitanEngine PRIVATE
     ${imgui_SOURCE_DIR}/imgui.cpp
     ${imgui_SOURCE_DIR}/imgui_demo.cpp
@@ -48,21 +42,20 @@ target_sources(TitanEngine PRIVATE
     ${imgui_SOURCE_DIR}/imgui_tables.cpp
     ${imgui_SOURCE_DIR}/imgui_widgets.cpp
     ${imgui_SOURCE_DIR}/backends/imgui_impl_glfw.cpp
-    ${imgui_SOURCE_DIR}/backends/imgui_impl_vulkan.cpp
+    ${imgui_SOURCE_DIR}/backends/imgui_impl_opengl3.cpp
 )
 
 target_include_directories(TitanEngine PUBLIC
     ${CMAKE_CURRENT_SOURCE_DIR}/Engine/include
     ${imgui_SOURCE_DIR}
     ${imgui_SOURCE_DIR}/backends
-    ${vulkan_headers_SOURCE_DIR}/include
+    ${glfw_SOURCE_DIR}/include
 )
 
-target_link_libraries(TitanEngine PUBLIC glfw)
-
-if(WIN32)
-    target_link_libraries(TitanEngine PRIVATE vulkan-1.lib)
-endif()
+target_link_libraries(TitanEngine PUBLIC 
+    glfw 
+    ${OPENGL_gl_LIBRARY}
+)
 
 # Editor
 add_executable(TitanEditor
@@ -71,4 +64,4 @@ add_executable(TitanEditor
 
 target_link_libraries(TitanEditor PRIVATE TitanEngine)
 
-message(STATUS "TitanEngine with Vulkan configured!")
+message(STATUS "TitanEngine configured with OpenGL + ImGui!")

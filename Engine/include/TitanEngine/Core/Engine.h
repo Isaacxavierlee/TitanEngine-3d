@@ -5,6 +5,9 @@ namespace Titan {
 
     class Engine {
     public:
+        Engine();
+        ~Engine();
+
         bool Initialize(const std::string& appName, int width, int height);
         void Shutdown();
         void Run();
