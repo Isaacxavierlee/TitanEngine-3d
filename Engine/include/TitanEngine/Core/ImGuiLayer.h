@@ -15,7 +15,6 @@ namespace Titan {
 
     private:
         ImGuiLayer() = default;
-        ~ImGuiLayer() = default;
         ImGuiLayer(const ImGuiLayer&) = delete;
         ImGuiLayer& operator=(const ImGuiLayer&) = delete;
 

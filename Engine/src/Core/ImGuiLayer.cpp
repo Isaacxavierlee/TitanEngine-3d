@@ -1,4 +1,5 @@
 #include "TitanEngine/Core/ImGuiLayer.h"
+#include <GL/glew.h>
 #include <imgui.h>
 #include <imgui_impl_glfw.h>
 #include <imgui_impl_opengl3.h>
@@ -14,9 +15,6 @@ namespace Titan {
 
     void ImGuiLayer::Initialize(GLFWwindow* window) {
         if (m_Initialized) return;
-
-        std::cout << "Initializing ImGui..." << std::endl;
-
         IMGUI_CHECKVERSION();
         ImGui::CreateContext();
 
@@ -27,26 +25,29 @@ namespace Titan {
 
         ImGui::StyleColorsDark();
 
+        ImGuiStyle& style = ImGui::GetStyle();
+        if (io.ConfigFlags & ImGuiConfigFlags_ViewportsEnable) {
+            style.WindowRounding              = 0.0f;
+            style.Colors[ImGuiCol_WindowBg].w = 1.0f;
+        }
+
         ImGui_ImplGlfw_InitForOpenGL(window, true);
         ImGui_ImplOpenGL3_Init("#version 330");
 
         m_Initialized = true;
-        std::cout << "ImGui initialized!" << std::endl;
+        std::cout << "[ImGuiLayer] Initialized\n";
     }
 
     void ImGuiLayer::Shutdown() {
         if (!m_Initialized) return;
-
         ImGui_ImplOpenGL3_Shutdown();
         ImGui_ImplGlfw_Shutdown();
         ImGui::DestroyContext();
-
         m_Initialized = false;
     }
 
     void ImGuiLayer::NewFrame() {
         if (!m_Initialized) return;
-
         ImGui_ImplOpenGL3_NewFrame();
         ImGui_ImplGlfw_NewFrame();
         ImGui::NewFrame();
@@ -54,7 +55,6 @@ namespace Titan {
 
     void ImGuiLayer::Render() {
         if (!m_Initialized) return;
-
         ImGui::Render();
         ImGui_ImplOpenGL3_RenderDrawData(ImGui::GetDrawData());
 
