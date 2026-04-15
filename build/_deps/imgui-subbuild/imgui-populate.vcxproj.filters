@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Isaac Xavier\Documents\GitHub\TitanEngine\build\_deps\imgui-subbuild\CMakeFiles\d60aaac5645b974031f1fab33c3bed10\imgui-populate-mkdir.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Isaac Xavier\Documents\GitHub\TitanEngine\build\_deps\imgui-subbuild\CMakeFiles\d60aaac5645b974031f1fab33c3bed10\imgui-populate-download.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Isaac Xavier\Documents\GitHub\TitanEngine\build\_deps\imgui-subbuild\CMakeFiles\d60aaac5645b974031f1fab33c3bed10\imgui-populate-update.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Isaac Xavier\Documents\GitHub\TitanEngine\build\_deps\imgui-subbuild\CMakeFiles\d60aaac5645b974031f1fab33c3bed10\imgui-populate-patch.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Isaac Xavier\Documents\GitHub\TitanEngine\build\_deps\imgui-subbuild\CMakeFiles\d60aaac5645b974031f1fab33c3bed10\imgui-populate-configure.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Isaac Xavier\Documents\GitHub\TitanEngine\build\_deps\imgui-subbuild\CMakeFiles\d60aaac5645b974031f1fab33c3bed10\imgui-populate-build.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Isaac Xavier\Documents\GitHub\TitanEngine\build\_deps\imgui-subbuild\CMakeFiles\d60aaac5645b974031f1fab33c3bed10\imgui-populate-install.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Isaac Xavier\Documents\GitHub\TitanEngine\build\_deps\imgui-subbuild\CMakeFiles\d60aaac5645b974031f1fab33c3bed10\imgui-populate-test.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Isaac Xavier\Documents\GitHub\TitanEngine\build\_deps\imgui-subbuild\CMakeFiles\2f3e77dfd68cc21867bbcb02b99239f1\imgui-populate-complete.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Isaac Xavier\Documents\GitHub\TitanEngine\build\_deps\imgui-subbuild\CMakeFiles\ec456b26cef739067fec6db0c35d0ca7\imgui-populate.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Isaac Xavier\Documents\GitHub\TitanEngine\build\_deps\imgui-subbuild\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\Isaac Xavier\Documents\GitHub\TitanEngine\build\_deps\imgui-subbuild\CMakeFiles\imgui-populate" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{21DA3EEF-A8C5-348B-918F-1BD2EAB33433}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

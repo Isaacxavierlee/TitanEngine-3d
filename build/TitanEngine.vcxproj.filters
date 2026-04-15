@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\Isaac Xavier\Documents\GitHub\TitanEngine\Engine\src\Core\Engine.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Isaac Xavier\Documents\GitHub\TitanEngine\Engine\src\Core\LayerStack.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Isaac Xavier\Documents\GitHub\TitanEngine\Engine\src\Core\ImGuiLayer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Isaac Xavier\Documents\GitHub\TitanEngine\Engine\src\Core\Input.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Isaac Xavier\Documents\GitHub\TitanEngine\Engine\src\Core\Renderer\GraphicsContext.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Isaac Xavier\Documents\GitHub\TitanEngine\Engine\src\Core\Renderer\Buffer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Isaac Xavier\Documents\GitHub\TitanEngine\Engine\src\Core\Renderer\VertexArray.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Isaac Xavier\Documents\GitHub\TitanEngine\Engine\src\Core\Renderer\Shader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Isaac Xavier\Documents\GitHub\TitanEngine\Engine\src\Core\Renderer\Camera.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Isaac Xavier\Documents\GitHub\TitanEngine\Engine\src\Core\Renderer\Renderer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Isaac Xavier\Documents\GitHub\TitanEngine\build\_deps\imgui-src\imgui.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Isaac Xavier\Documents\GitHub\TitanEngine\build\_deps\imgui-src\imgui_demo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Isaac Xavier\Documents\GitHub\TitanEngine\build\_deps\imgui-src\imgui_draw.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Isaac Xavier\Documents\GitHub\TitanEngine\build\_deps\imgui-src\imgui_tables.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Isaac Xavier\Documents\GitHub\TitanEngine\build\_deps\imgui-src\imgui_widgets.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Isaac Xavier\Documents\GitHub\TitanEngine\build\_deps\imgui-src\backends\imgui_impl_glfw.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Isaac Xavier\Documents\GitHub\TitanEngine\build\_deps\imgui-src\backends\imgui_impl_opengl3.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Isaac Xavier\Documents\GitHub\TitanEngine\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{90748FB0-B202-3998-9CAC-4964D816785B}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

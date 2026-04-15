@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "C:/Users/Isaac Xavier/Documents/GitHub/TitanEngine/build/_deps/imgui-subbuild/CMakeFiles/imgui-populate"
+		},
+		{
+			"file" : "C:/Users/Isaac Xavier/Documents/GitHub/TitanEngine/build/_deps/imgui-subbuild/CMakeFiles/ec456b26cef739067fec6db0c35d0ca7/imgui-populate.rule"
+		},
+		{
+			"file" : "C:/Users/Isaac Xavier/Documents/GitHub/TitanEngine/build/_deps/imgui-subbuild/CMakeFiles/2f3e77dfd68cc21867bbcb02b99239f1/imgui-populate-complete.rule"
+		},
+		{
+			"file" : "C:/Users/Isaac Xavier/Documents/GitHub/TitanEngine/build/_deps/imgui-subbuild/CMakeFiles/d60aaac5645b974031f1fab33c3bed10/imgui-populate-build.rule"
+		},
+		{
+			"file" : "C:/Users/Isaac Xavier/Documents/GitHub/TitanEngine/build/_deps/imgui-subbuild/CMakeFiles/d60aaac5645b974031f1fab33c3bed10/imgui-populate-configure.rule"
+		},
+		{
+			"file" : "C:/Users/Isaac Xavier/Documents/GitHub/TitanEngine/build/_deps/imgui-subbuild/CMakeFiles/d60aaac5645b974031f1fab33c3bed10/imgui-populate-download.rule"
+		},
+		{
+			"file" : "C:/Users/Isaac Xavier/Documents/GitHub/TitanEngine/build/_deps/imgui-subbuild/CMakeFiles/d60aaac5645b974031f1fab33c3bed10/imgui-populate-install.rule"
+		},
+		{
+			"file" : "C:/Users/Isaac Xavier/Documents/GitHub/TitanEngine/build/_deps/imgui-subbuild/CMakeFiles/d60aaac5645b974031f1fab33c3bed10/imgui-populate-mkdir.rule"
+		},
+		{
+			"file" : "C:/Users/Isaac Xavier/Documents/GitHub/TitanEngine/build/_deps/imgui-subbuild/CMakeFiles/d60aaac5645b974031f1fab33c3bed10/imgui-populate-patch.rule"
+		},
+		{
+			"file" : "C:/Users/Isaac Xavier/Documents/GitHub/TitanEngine/build/_deps/imgui-subbuild/CMakeFiles/d60aaac5645b974031f1fab33c3bed10/imgui-populate-test.rule"
+		},
+		{
+			"file" : "C:/Users/Isaac Xavier/Documents/GitHub/TitanEngine/build/_deps/imgui-subbuild/CMakeFiles/d60aaac5645b974031f1fab33c3bed10/imgui-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"imgui-populate"
+		],
+		"name" : "imgui-populate"
+	}
+}

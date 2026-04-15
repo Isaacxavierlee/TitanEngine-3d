@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Isaac Xavier\Documents\GitHub\TitanEngine\build\_deps\glfw-subbuild\CMakeFiles\97f51aa991563a50cdd43ed2de4f4970\glfw-populate-mkdir.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Isaac Xavier\Documents\GitHub\TitanEngine\build\_deps\glfw-subbuild\CMakeFiles\97f51aa991563a50cdd43ed2de4f4970\glfw-populate-download.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Isaac Xavier\Documents\GitHub\TitanEngine\build\_deps\glfw-subbuild\CMakeFiles\97f51aa991563a50cdd43ed2de4f4970\glfw-populate-update.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Isaac Xavier\Documents\GitHub\TitanEngine\build\_deps\glfw-subbuild\CMakeFiles\97f51aa991563a50cdd43ed2de4f4970\glfw-populate-patch.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Isaac Xavier\Documents\GitHub\TitanEngine\build\_deps\glfw-subbuild\CMakeFiles\97f51aa991563a50cdd43ed2de4f4970\glfw-populate-configure.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Isaac Xavier\Documents\GitHub\TitanEngine\build\_deps\glfw-subbuild\CMakeFiles\97f51aa991563a50cdd43ed2de4f4970\glfw-populate-build.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Isaac Xavier\Documents\GitHub\TitanEngine\build\_deps\glfw-subbuild\CMakeFiles\97f51aa991563a50cdd43ed2de4f4970\glfw-populate-install.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Isaac Xavier\Documents\GitHub\TitanEngine\build\_deps\glfw-subbuild\CMakeFiles\97f51aa991563a50cdd43ed2de4f4970\glfw-populate-test.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Isaac Xavier\Documents\GitHub\TitanEngine\build\_deps\glfw-subbuild\CMakeFiles\b512386d2fb5dee0e06629f2b3a612ad\glfw-populate-complete.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Isaac Xavier\Documents\GitHub\TitanEngine\build\_deps\glfw-subbuild\CMakeFiles\b99eb1259e1e8d7166637a02e314421b\glfw-populate.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Isaac Xavier\Documents\GitHub\TitanEngine\build\_deps\glfw-subbuild\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\Isaac Xavier\Documents\GitHub\TitanEngine\build\_deps\glfw-subbuild\CMakeFiles\glfw-populate" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{BA2C72CB-EF4A-3E07-AC3B-E926391E9F6F}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

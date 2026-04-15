@@ -1,0 +1,17 @@
+C:/Users/Isaac Xavier/Documents/GitHub/TitanEngine/build/CMakeFiles/TitanEngine.dir
+C:/Users/Isaac Xavier/Documents/GitHub/TitanEngine/build/CMakeFiles/TitanEditor.dir
+C:/Users/Isaac Xavier/Documents/GitHub/TitanEngine/build/CMakeFiles/INSTALL.dir
+C:/Users/Isaac Xavier/Documents/GitHub/TitanEngine/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/Isaac Xavier/Documents/GitHub/TitanEngine/build/CMakeFiles/ZERO_CHECK.dir
+C:/Users/Isaac Xavier/Documents/GitHub/TitanEngine/build/_deps/glfw-build/CMakeFiles/INSTALL.dir
+C:/Users/Isaac Xavier/Documents/GitHub/TitanEngine/build/_deps/glfw-build/CMakeFiles/ALL_BUILD.dir
+C:/Users/Isaac Xavier/Documents/GitHub/TitanEngine/build/_deps/glfw-build/src/CMakeFiles/glfw.dir
+C:/Users/Isaac Xavier/Documents/GitHub/TitanEngine/build/_deps/glfw-build/src/CMakeFiles/update_mappings.dir
+C:/Users/Isaac Xavier/Documents/GitHub/TitanEngine/build/_deps/glfw-build/src/CMakeFiles/INSTALL.dir
+C:/Users/Isaac Xavier/Documents/GitHub/TitanEngine/build/_deps/glew-build/CMakeFiles/libglew_static.dir
+C:/Users/Isaac Xavier/Documents/GitHub/TitanEngine/build/_deps/glew-build/CMakeFiles/INSTALL.dir
+C:/Users/Isaac Xavier/Documents/GitHub/TitanEngine/build/_deps/glew-build/CMakeFiles/ALL_BUILD.dir
+C:/Users/Isaac Xavier/Documents/GitHub/TitanEngine/build/_deps/glm-build/CMakeFiles/INSTALL.dir
+C:/Users/Isaac Xavier/Documents/GitHub/TitanEngine/build/_deps/glm-build/CMakeFiles/ALL_BUILD.dir
+C:/Users/Isaac Xavier/Documents/GitHub/TitanEngine/build/_deps/glm-build/glm/CMakeFiles/glm.dir
+C:/Users/Isaac Xavier/Documents/GitHub/TitanEngine/build/_deps/glm-build/glm/CMakeFiles/INSTALL.dir

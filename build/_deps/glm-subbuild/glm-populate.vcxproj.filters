@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Isaac Xavier\Documents\GitHub\TitanEngine\build\_deps\glm-subbuild\CMakeFiles\2229474fef08b8c453bc71640222fe78\glm-populate-mkdir.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Isaac Xavier\Documents\GitHub\TitanEngine\build\_deps\glm-subbuild\CMakeFiles\2229474fef08b8c453bc71640222fe78\glm-populate-download.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Isaac Xavier\Documents\GitHub\TitanEngine\build\_deps\glm-subbuild\CMakeFiles\2229474fef08b8c453bc71640222fe78\glm-populate-update.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Isaac Xavier\Documents\GitHub\TitanEngine\build\_deps\glm-subbuild\CMakeFiles\2229474fef08b8c453bc71640222fe78\glm-populate-patch.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Isaac Xavier\Documents\GitHub\TitanEngine\build\_deps\glm-subbuild\CMakeFiles\2229474fef08b8c453bc71640222fe78\glm-populate-configure.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Isaac Xavier\Documents\GitHub\TitanEngine\build\_deps\glm-subbuild\CMakeFiles\2229474fef08b8c453bc71640222fe78\glm-populate-build.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Isaac Xavier\Documents\GitHub\TitanEngine\build\_deps\glm-subbuild\CMakeFiles\2229474fef08b8c453bc71640222fe78\glm-populate-install.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Isaac Xavier\Documents\GitHub\TitanEngine\build\_deps\glm-subbuild\CMakeFiles\2229474fef08b8c453bc71640222fe78\glm-populate-test.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Isaac Xavier\Documents\GitHub\TitanEngine\build\_deps\glm-subbuild\CMakeFiles\8322908826d2fe3648cdadc9357df87c\glm-populate-complete.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Isaac Xavier\Documents\GitHub\TitanEngine\build\_deps\glm-subbuild\CMakeFiles\ec4a630663b9966af68e0edcd6f21759\glm-populate.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Isaac Xavier\Documents\GitHub\TitanEngine\build\_deps\glm-subbuild\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\Isaac Xavier\Documents\GitHub\TitanEngine\build\_deps\glm-subbuild\CMakeFiles\glm-populate" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{D45F91AA-6A59-3996-80C8-492F24840CF7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
