@@ -1,4 +1,5 @@
 C:/Users/Isaac Xavier/Documents/GitHub/TitanEngine/build/CMakeFiles/TitanEngine.dir
+C:/Users/Isaac Xavier/Documents/GitHub/TitanEngine/build/CMakeFiles/HousingApp.dir
 C:/Users/Isaac Xavier/Documents/GitHub/TitanEngine/build/CMakeFiles/TitanEditor.dir
 C:/Users/Isaac Xavier/Documents/GitHub/TitanEngine/build/CMakeFiles/INSTALL.dir
 C:/Users/Isaac Xavier/Documents/GitHub/TitanEngine/build/CMakeFiles/ALL_BUILD.dir

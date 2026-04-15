@@ -4,6 +4,9 @@ project(TitanEngine VERSION 0.1.0)
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
+# Suppress deprecation warnings from fetched dependencies
+set(CMAKE_WARN_DEPRECATED OFF CACHE BOOL "" FORCE)
+
 # GLEW_STATIC must be defined globally BEFORE glew is fetched
 add_compile_definitions(GLEW_STATIC)
 
@@ -51,7 +54,7 @@ FetchContent_MakeAvailable(imgui)
 # ── OpenGL ────────────────────────────────────────────────────────────────────
 find_package(OpenGL REQUIRED)
 
-# ── Verify every engine .cpp exists — gives a clear error if a file is missing
+# ── Verify every engine .cpp exists ───────────────────────────────────────────
 set(ENGINE_SOURCES
     Engine/src/Core/Engine.cpp
     Engine/src/Core/LayerStack.cpp
@@ -93,7 +96,7 @@ target_include_directories(TitanEngine PUBLIC
     ${glm_SOURCE_DIR}
 )
 
-# ── Resolve GLEW static target (name differs across glew-cmake versions) ───────
+# ── Resolve GLEW static target ────────────────────────────────────────────────
 if(TARGET libglew_static)
     set(GLEW_LIB libglew_static)
 elseif(TARGET GLEW::glew_s)
@@ -116,13 +119,31 @@ if(WIN32)
     target_link_libraries(TitanEngine PUBLIC opengl32)
 endif()
 
+# ── HousingApp static library ─────────────────────────────────────────────────
+add_library(HousingApp STATIC
+    App/src/Layers/HousingViewerLayer.cpp
+)
+
+target_include_directories(HousingApp PUBLIC
+    ${CMAKE_CURRENT_SOURCE_DIR}/App/src
+)
+
+target_link_libraries(HousingApp PUBLIC TitanEngine)
+
 # ── TitanEditor executable ────────────────────────────────────────────────────
 if(NOT EXISTS "${CMAKE_CURRENT_SOURCE_DIR}/Editor/src/Main.cpp")
     message(FATAL_ERROR "\n  MISSING: Editor/src/Main.cpp\n  Create this file then re-run cmake.\n")
 endif()
 
-add_executable(TitanEditor Editor/src/Main.cpp)
-target_link_libraries(TitanEditor PRIVATE TitanEngine)
+add_executable(TitanEditor
+    Editor/src/Main.cpp
+)
+
+target_include_directories(TitanEditor PRIVATE
+    ${CMAKE_CURRENT_SOURCE_DIR}/App/src
+)
+
+target_link_libraries(TitanEditor PRIVATE HousingApp)
 
 # ── Summary ───────────────────────────────────────────────────────────────────
 message(STATUS "")

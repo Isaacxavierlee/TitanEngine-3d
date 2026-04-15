@@ -15,13 +15,13 @@ namespace Titan {
 
     Engine* Engine::s_Instance = nullptr;
 
-    Engine::Engine()  { s_Instance = this; }
+    Engine::Engine() { s_Instance = this; }
     Engine::~Engine() = default;
 
     bool Engine::Initialize(const std::string& appName, int width, int height) {
         std::cout << "[Engine] Initializing " << appName
-                  << " (" << width << "x" << height << ")\n";
-        m_Width  = width;
+            << " (" << width << "x" << height << ")\n";
+        m_Width = width;
         m_Height = height;
 
         if (!glfwInit()) {
@@ -63,9 +63,9 @@ namespace Titan {
             [](GLFWwindow* w, int key, int, int action, int) {
                 Engine* eng = static_cast<Engine*>(glfwGetWindowUserPointer(w));
                 switch (action) {
-                    case GLFW_PRESS:   { KeyPressedEvent  e(static_cast<Key>(key), false); eng->OnEvent(e); break; }
-                    case GLFW_REPEAT:  { KeyPressedEvent  e(static_cast<Key>(key), true);  eng->OnEvent(e); break; }
-                    case GLFW_RELEASE: { KeyReleasedEvent e(static_cast<Key>(key));         eng->OnEvent(e); break; }
+                case GLFW_PRESS: { KeyPressedEvent  e(static_cast<Key>(key), false); eng->OnEvent(e); break; }
+                case GLFW_REPEAT: { KeyPressedEvent  e(static_cast<Key>(key), true);  eng->OnEvent(e); break; }
+                case GLFW_RELEASE: { KeyReleasedEvent e(static_cast<Key>(key));         eng->OnEvent(e); break; }
                 }
             });
 
@@ -74,7 +74,8 @@ namespace Titan {
                 Engine* eng = static_cast<Engine*>(glfwGetWindowUserPointer(w));
                 if (action == GLFW_PRESS) {
                     MouseButtonPressedEvent  e(static_cast<MouseButton>(button)); eng->OnEvent(e);
-                } else {
+                }
+                else {
                     MouseButtonReleasedEvent e(static_cast<MouseButton>(button)); eng->OnEvent(e);
                 }
             });
@@ -123,7 +124,7 @@ namespace Titan {
         }
     }
 
-    void Engine::Quit()     { m_IsRunning = false; }
+    void Engine::Quit() { m_IsRunning = false; }
 
     void Engine::Shutdown() {
         std::cout << "[Engine] Shutting down\n";
@@ -133,13 +134,13 @@ namespace Titan {
         std::cout << "[Engine] Done\n";
     }
 
-    void Engine::PushLayer  (Layer* l) { m_LayerStack.PushLayer(l); }
+    void Engine::PushLayer(Layer* l) { m_LayerStack.PushLayer(l); }
     void Engine::PushOverlay(Layer* o) { m_LayerStack.PushOverlay(o); }
 
     void Engine::OnEvent(Event& e) {
         EventDispatcher d(e);
-        d.Dispatch<WindowCloseEvent> ([this](WindowCloseEvent&  ev){ return OnWindowClose(ev);  });
-        d.Dispatch<WindowResizeEvent>([this](WindowResizeEvent& ev){ return OnWindowResize(ev); });
+        d.Dispatch<WindowCloseEvent>([this](WindowCloseEvent& ev) { return OnWindowClose(ev);  });
+        d.Dispatch<WindowResizeEvent>([this](WindowResizeEvent& ev) { return OnWindowResize(ev); });
 
         for (auto it = m_LayerStack.rbegin(); it != m_LayerStack.rend(); ++it) {
             if (e.Handled) break;
@@ -150,7 +151,7 @@ namespace Titan {
     bool Engine::OnWindowClose(WindowCloseEvent&) { Quit(); return true; }
 
     bool Engine::OnWindowResize(WindowResizeEvent& e) {
-        m_Width  = e.GetWidth();
+        m_Width = e.GetWidth();
         m_Height = e.GetHeight();
         glViewport(0, 0, m_Width, m_Height);
         return false;
